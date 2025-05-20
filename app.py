@@ -1,6 +1,6 @@
-
 import streamlit as st
 import math
+import pandas as pd  # direkt am Anfang importieren
 
 st.set_page_config(page_title="Endnotenrechner Abschlussprüfungen", layout="centered")
 
@@ -24,24 +24,4 @@ def berechne_endnote(vornote, abschlussnote):
 
 def berechne_neue_endnoten(vornote, abschlussnote):
     ergebnisse = {}
-    for muendlich in range(1, 7):
-        neuer_abschluss = rundung_abschluss_aus_pruefung(abschlussnote, muendlich)
-        neue_endnote = berechne_endnote(vornote, neuer_abschluss)
-        ergebnisse[muendlich] = neue_endnote
-    return ergebnisse
-
-if st.button("Endnote berechnen"):
-    endnote = berechne_endnote(vornote, abschlussnote)
-    st.subheader(f"📝 Deine Endnote: {endnote}")
-
-    st.subheader("📊 Endnoten bei mündlicher Prüfung")
-    tabelle = berechne_neue_endnoten(vornote, abschlussnote)
-import pandas as pd
-
-df = pd.DataFrame({
-    "Mündliche Note": list(tabelle.keys()),
-    "Endnote": list(tabelle.values())
-})
-
-st.table(df)
-
+    for
