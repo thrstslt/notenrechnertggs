@@ -2,10 +2,10 @@
 import streamlit as st
 import math
 
-st.set_page_config(page_title="Endnotenrechner", layout="centered")
+st.set_page_config(page_title="Endnotenrechner Abschlussprüfungen", layout="centered")
 
 st.title("🎓 Endnoten-Rechner")
-st.write("Berechne deine Endnote mit oder ohne mündliche Prüfung.")
+st.write("Berechne deine Endnote und schaue, ob sich für dich eine mündliche Prüfung lohnt.")
 
 # Eingabe der Noten
 vornote = st.number_input("Vornote (1–6)", min_value=1, max_value=6, step=1)
