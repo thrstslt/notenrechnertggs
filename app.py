@@ -41,5 +41,3 @@ if st.button("Endnote berechnen"):
         "Mündliche Note": list(tabelle.keys()),
         "Endnote": list(tabelle.values())
     })
-
-    st.info("Die Note der Abschlussarbeit wird bei mündlicher Prüfung gemittelt und abgerundet. Dann wird die Endnote neu berechnet.")
