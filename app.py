@@ -36,8 +36,12 @@ if st.button("Endnote berechnen"):
 
     st.subheader("📊 Endnoten bei mündlicher Prüfung")
     tabelle = berechne_neue_endnoten(vornote, abschlussnote)
+import pandas as pd
 
-    st.table({
-        "Mündliche Note": list(tabelle.keys()),
-        "Endnote": list(tabelle.values())
-    })
+df = pd.DataFrame({
+    "Mündliche Note": list(tabelle.keys()),
+    "Endnote": list(tabelle.values())
+})
+
+st.table(df)
+
