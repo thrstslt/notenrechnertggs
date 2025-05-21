@@ -1,9 +1,9 @@
 import streamlit as st
 import math
 
-st.set_page_config(page_title="Endnotenrechner Abschlussprüfungen", layout="centered")
+st.set_page_config(page_title="Was ändert eine mündliche Prüfung?", layout="centered")
 
-st.title("🎓 Endnoten-Rechner")
+st.title("🎓Was ändert eine mündliche Prüfung?")
 st.write("Berechne deine Endnote und schaue, ob sich für dich eine mündliche Prüfung lohnt.")
 
 # Eingabe der Noten
